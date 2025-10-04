@@ -4,11 +4,15 @@
 
 div.top {
     display: flex;
+    justify-content: center;
     margin-bottom: 10px;
 }
 
 button {
     margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    cursor:pointer;
 }
 div.container {
     height: 500px;
@@ -24,12 +28,8 @@ div.container {
 }
 
 div.row > div{
-    border: 1px solid brown;
+    border: 1px solid black;
     padding: 1px;
     min-width: 0;
     flex: 1 1 auto;
-}
-
-.hover{
-    background-color: aquamarine;
 }
