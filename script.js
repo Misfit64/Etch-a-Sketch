@@ -4,14 +4,18 @@ function createDiv(number){
     newContainer.classList.add("row");
     for(k = 0; k < number; k++){
         let newDiv = document.createElement("div");
-        // newDiv.textContent ="test";
+        newDiv.addEventListener("mouseenter",changeColor);
         newContainer.append(newDiv);
     }
     container.append(newContainer);
+}
+function changeColor(){
+    this.classList.add("hover");
 }
 function multipleDivs(rows = 1,columns = 1){
     for(i = 0; i < rows; i++){
         createDiv(columns);
     }
 }
+
 multipleDivs(16,16);

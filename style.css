@@ -14,3 +14,7 @@ div.row > div{
     padding: 10px;
     flex: auto;
 }
+
+.hover{
+    background-color: aquamarine;
+}
