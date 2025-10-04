@@ -1,3 +1,11 @@
 * {
     box-sizing: border-box;
 }
+
+div {
+    border: 1px solid brown;
+}
+
+.row {
+    display: flex;
+}
