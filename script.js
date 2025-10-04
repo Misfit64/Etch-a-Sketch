@@ -4,7 +4,7 @@ function createDiv(number){
     newContainer.classList.add("row");
     for(k = 0; k < number; k++){
         let newDiv = document.createElement("div");
-        newDiv.textContent ="test";
+        // newDiv.textContent ="test";
         newContainer.append(newDiv);
     }
     container.append(newContainer);
@@ -14,4 +14,4 @@ function multipleDivs(rows = 1,columns = 1){
         createDiv(columns);
     }
 }
-multipleDivs();
+multipleDivs(16,16);
