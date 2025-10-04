@@ -25,7 +25,7 @@ multipleDivs(16,16);
 
 function newGrid(){
     let size = prompt("Please Enter a New Grid Size","16");
-    if(size !== null){
+    if(size !== null && size > 0 && size <= 100){
         container.innerHTML = '';
         multipleDivs(size,size);
     }

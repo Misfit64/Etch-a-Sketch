@@ -6,18 +6,28 @@ div.top {
     display: flex;
     margin-bottom: 10px;
 }
+
 button {
     margin: auto;
 }
-
-.row {
+div.container {
+    height: 500px;
+    width: 500px;
     display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.row {
+    width: 500px;
+    display: flex;
+    flex: 1 1 auto;
 }
 
 div.row > div{
     border: 1px solid brown;
-    padding: 10px;
-    flex: auto;
+    padding: 1px;
+    min-width: 0;
+    flex: 1 1 auto;
 }
 
 .hover{
